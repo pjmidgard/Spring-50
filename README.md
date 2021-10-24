@@ -1,7 +1,7 @@
 # Spring-50
 Spring 50
 
-Developed a vital records program by Jurijus Pacalovas.
+Developed: Jurijus Pacalovas.
 
 Algorithm Spring 50
 
