@@ -333,7 +333,7 @@ class compression:
 
                                                   if sda10=="0":
                                                          sda10=sda3[ei:ei+32]
-                                                         sda10=sda10[1:]
+                                                         sda10=sda10
                                                          sda17=sda17+sda10
                                                   if sda10=="1":
 
