@@ -320,7 +320,7 @@ class compression:
                                            
                                            if lenf2==0:
 
-                                                  sda10=sda3[ei:ei+33]
+                                                  sda10=sda3[ei:ei+32]
 
                                                
                                                   sda10=sda10[1:]
