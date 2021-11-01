@@ -5,7 +5,8 @@ import os
 import binascii
 import math
 
-zzaax=""
+
+zaax=""
 szxzzzas=""
 asaaq=""
 assa=0
@@ -63,7 +64,14 @@ wer=""
 qtqweqw=""
 numberschangenotexist = []
 numbers = []
+
+
+lenf=0
+name=""
+szx=""
+wer=""
 namez = input("c,c2: compress or e,u2: extract? ")
+
 #@Author Jurijus pacalovas
 class compression:
 
@@ -1164,6 +1172,12 @@ class compression:
                                     x3 = x2-x
                                     return print(x3) 
 
+
+                            
+                            
+
+   
+
        def cryptograpy_compression4(self):
                 
                 self.name = "Written: Jurijus pacalovas Date: 29/09/2021 18:06"
@@ -1458,26 +1472,26 @@ class compression:
                                     while ei<lenf6F:
 
                                            sda9=sda3[ei:ei+1]
-                                           sda12=sda3[ei:ei+8]
+                                           sda12=sda3[ei:ei+32]
                                            lenf2=len(sda12)
 
                                            
 
                                            #32 bit 33 bit 31 bit
                                            
-                                           if lenf2<=2:
+                                           if lenf2<=25:
                                                   sda17=sda17+sda12
                                                   ei=ei+lenf2
 
 
-                                           if sda9[0:1]=="0" and lenf2==8:
-                                                         sda10=sda3[ei:ei+9]
+                                           if sda9[0:1]=="0" and lenf2==32:
+                                                         sda10=sda3[ei:ei+33]
                                                          sda10=sda10[1:]
                                                          sda17=sda17+sda10
-                                                         ei=ei+9
-                                           if sda9[0:1]=="1" and lenf2==8:
+                                                         ei=ei+33
+                                           if sda9[0:1]=="1" and lenf2==32:
 
-                                                         sda10=sda3[ei:ei+2]
+                                                         sda10=sda3[ei:ei+25]
 
                                                          sda10=sda10[1:]
 
@@ -1493,17 +1507,17 @@ class compression:
                                                          lenf=len(N4)
                                                                  
                                                          szx2=""
-                                                         xc=8-lenf
+                                                         xc=32-lenf
                                                          z=0
                                                          if xc!=0:
-                                                               if xc!=8:
+                                                               if xc!=32:
                                                                       while z<xc:
                                                                              szx2="0"+szx2
                                                                              z=z+1
                                                          
                                                         
                                                          sda17=sda17+szx2+N4
-                                                         ei=ei+2
+                                                         ei=ei+25
                                                          
 
                                                          
@@ -1568,7 +1582,7 @@ class compression:
 
                                     while ei<lenf6F:
 
-                                           sda10=sda3[ei:ei+8]#32 bit 33 bit 31 bit
+                                           sda10=sda3[ei:ei+32]#32 bit 33 bit 31 bit
 
                                          
                                            lenf1=len(sda10)
@@ -1583,47 +1597,47 @@ class compression:
 
 
 
-                                           if lenf2!=8:
+                                           if lenf2!=32:
                                                   sda17=sda17+sda10
                                                   
-                                           if N3<0 and lenf2==8:
+                                           if N3<0 and lenf2==32:
                                                          sda17=sda17+"0"+sda10
-                                           elif N3>(2*1)-1 and lenf2==8:
+                                           elif N3>(2*24)-1 and lenf2==32:
                                                         
                                                          N4=bin(N3)[2:]
 
                                                          lenf=len(N4)
                                                                  
                                                          szx2=""
-                                                         xc=8-lenf
+                                                         xc=32-lenf
                                                          z=0
                                                          if xc!=0:
-                                                               if xc!=8:
+                                                               if xc!=32:
                                                                       while z<xc:
                                                                              szx2="0"+szx2
                                                                              z=z+1
                                                          sda17=sda17+"0"+szx2+N4
                                                          
                                                          
-                                           elif N3<=(2*1)-1 and lenf2==8:
+                                           elif N3<=(2*24)-1 and lenf2==32:
 
                                                          N4=bin(N3)[2:]
 
                                                          lenf=len(N4)
                                                                  
                                                          szx2=""
-                                                         xc=1-lenf
+                                                         xc=24-lenf
                                                          z=0
                                                          if xc!=0:
-                                                               if xc!=1:
+                                                               if xc!=24:
                                                                       while z<xc:
                                                                              szx2="0"+szx2
                                                                              z=z+1
                                                          sda17=sda17+"1"+szx2+N4
 
 
-                                           ei=ei+8
-                                                 
+                                           ei=ei+32
+                                                  
                                     sda6=sda4
                                     sda4=""
                                       
@@ -1709,6 +1723,7 @@ class compression:
                                                    print("FAST")
 
                                             return print(x3)
+
 d=compression()
 
 xwc3=d.Areacu2()
