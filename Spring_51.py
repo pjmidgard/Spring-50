@@ -1477,7 +1477,7 @@ class compression:
                                         sda1=sda3[0:48]
                                         SB = int(sda1, 2)
 
-                                        sda2=sda3[48:SB]
+                                        sda2=sda3[48:SB+48]
                                         #print(sda2)
 
                                         sda3=sda3[SB+48:]
@@ -1545,7 +1545,7 @@ class compression:
 
                                            
                                            
-                                    sda17=sda17+sda3[ei-262:]            
+                                    #sda17=sda17+sda3[ei-262:]            
                                     Circle_times2=Circle_times2+1
                                     
                                     if   Circle_times2==1:
